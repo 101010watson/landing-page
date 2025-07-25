@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-part{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: white;
+    padding: 15px 240px 50px 240px;
+}
+.navigation{
+    margin-bottom: 50px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.right-nav{
+    margin-left: auto;
+}
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+.content-box img{
+    /* the image is still shrinking - check on it later */
+   width:730;
+   height:230px ;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex:1 ; /* did this to the content because the content basis needs to be 0 so that the width remains the content size */
+    margin-right: 90px; /* to create a space between the content and the image*/
+}
+p{
+    margin: 0;
+}
+button.signup{
+    width: 100px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.information{
+    border: 2px solid red;
+    padding: 15px 240px 50px 240px;
+}
+
+.cards{
+    display: flex;
+}
+.card{
+    width: 200px;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
