@@ -38,13 +38,14 @@ a{
 
 .content-box{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap:wrap;
 }
 .content-box img{
-    /* the image is still shrinking - check on it later */
-   width:730;
-   height:230px ;
+    flex: 0 1 0;
+    width: 500px;
+    height: 250px;
+
 }
 .content{
     display: flex;
@@ -52,6 +53,7 @@ a{
     flex:1 ; /* did this to the content because the content basis needs to be 0 so that the width remains the content size */
     margin-right: 90px; /* to create a space between the content and the image*/
 }
+
 p{
     margin: 0;
 }
@@ -67,17 +69,57 @@ button.signup{
 }
 
 .information{
-    border: 2px solid red;
     padding: 15px 240px 50px 240px;
 }
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .card{
+    text-align: center;
     width: 200px;
+    margin-bottom: 10px;
 }
 .card img{
+    border-radius: 10px;
     width: 200px;
-    height: 200px;
+    height: 150px;
 }
+
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    min-height: 300px;
+    /* the text is not shrinking when i minimize the tab */
+    padding: 15px 240px 15px 240px;
+}
+
+.quote p{
+    font-size: 36px;
+    font-weight:lighter ;
+    font-style: italic;
+}
+
+.alert-outer-box{
+    padding: 50px 240px 50px 240px
+}
+
+.alert-inner-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#3882F6;
+    color: white;
+    padding: 35px 70px 35px 70px;
+    border-radius: 10px;
+}
+.alert-inner-box button{
+    border: 2px solid white;
+}
+
