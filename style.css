@@ -8,7 +8,9 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    
+}
 .header-part{
     display: flex;
     flex-direction: column;
@@ -16,7 +18,7 @@ body{
     color: white;
     padding: 15px 240px 50px 240px;
 }
-.navigation{
+nav{
     margin-bottom: 50px;
 }
 ul{
@@ -36,12 +38,12 @@ a{
     margin-left: auto;
 }
 
-.content-box{
+section{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
 }
-.content-box img{
+section img{
     flex: 0 1 0;
     width: 500px;
     height: 250px;
@@ -106,7 +108,7 @@ button.signup{
 }
 
 .alert-outer-box{
-    padding: 50px 240px 50px 240px
+    padding: 50px 240px 50px 240px;
 }
 
 .alert-inner-box{
@@ -121,5 +123,14 @@ button.signup{
 }
 .alert-inner-box button{
     border: 2px solid white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 20px;
 }
 
