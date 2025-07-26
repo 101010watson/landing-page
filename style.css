@@ -8,9 +8,6 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
 .header-part{
     display: flex;
     flex-direction: column;
